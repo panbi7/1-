@@ -98,11 +98,9 @@ void printReport(char mn[10][20], int mr[10], int mc, char wn[10][20], int wr[10
     printf("호실별 배정 명단\n");
     for (int i = 0; i < 5; i++) {
         printf("%d호: ", i + 101);
-        int found = 0;
         for (int j = 0; j < mc; j++) {
             if (mr[j] == i + 101) {
                 printf("%s ", mn[j]);
-                found = 1;
             }
         }
         printf("\n");
@@ -110,11 +108,9 @@ void printReport(char mn[10][20], int mr[10], int mc, char wn[10][20], int wr[10
 
     for (int i = 0; i < 5; i++) {
         printf("%d호: ", i + 201);
-        int found = 0;
         for (int j = 0; j < wc; j++) {
             if (wr[j] == i + 201) {
                 printf("%s ", wn[j]);
-                found = 1;
             }
         }
         printf("\n");
